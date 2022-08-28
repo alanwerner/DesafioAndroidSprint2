@@ -8,9 +8,11 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.recyclerview.adapter.ListaPaisesAdapter;
+import com.example.recyclerview.adapter.listener.OnItemClickListener;
 import com.example.recyclerview.data.CountryCovidData;
 import com.example.recyclerview.data.GetCovidDataListFromJson;
 import com.example.recyclerview.databinding.FragmentFirstBinding;
@@ -38,9 +40,17 @@ public class FirstFragment extends Fragment {
         RecyclerView listaPaises = binding.listaPaisesRecyclerView;
         adapter = new ListaPaisesAdapter(listaDadosCovidPais, getContext());
         listaPaises.setAdapter(adapter);
+        adapter.setOnItemClickListener(new OnItemClickListener() {
+            @Override
+            public void onItemClick(CountryCovidData pais, int posicao) {
+                NavHostFragment.findNavController(FirstFragment.this)
+                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
+            }
+        });
+
+
     }
 
-    
 
     @Override
     public void onDestroyView() {

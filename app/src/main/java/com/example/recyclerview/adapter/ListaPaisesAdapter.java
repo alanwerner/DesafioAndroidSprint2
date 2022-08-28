@@ -10,6 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.recyclerview.R;
+import com.example.recyclerview.adapter.listener.OnItemClickListener;
 import com.example.recyclerview.data.CountryCovidData;
 import com.example.recyclerview.data.GetCountryCovidDataListUseCase;
 import com.example.recyclerview.data.GetCovidDataListFromJson;
@@ -18,12 +19,17 @@ import java.util.List;
 
 public class ListaPaisesAdapter extends RecyclerView.Adapter<ListaPaisesAdapter.ViewHolder> {
 
+    private OnItemClickListener onItemClickListener;
     final private List<CountryCovidData> paises;
     final private Context context;
 
     public ListaPaisesAdapter(List<CountryCovidData> pais, Context context) {
         this.paises = pais;
         this.context = context;
+    }
+
+    public void setOnItemClickListener(OnItemClickListener onItemClickListener) {
+        this.onItemClickListener = onItemClickListener;
     }
 
     @NonNull
@@ -50,9 +56,16 @@ public class ListaPaisesAdapter extends RecyclerView.Adapter<ListaPaisesAdapter.
         private CountryCovidData pais;
         private final TextView item_pais_NomePais;
 
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             item_pais_NomePais = itemView.findViewById(R.id.item_pais_NomePais);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    onItemClickListener.onItemClick(pais, getAdapterPosition());
+                }
+            });
         }
 
         public void vincula (CountryCovidData pais){
