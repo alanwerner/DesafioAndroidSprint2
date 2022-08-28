@@ -43,8 +43,13 @@ public class FirstFragment extends Fragment {
         adapter.setOnItemClickListener(new OnItemClickListener() {
             @Override
             public void onItemClick(CountryCovidData pais, int posicao) {
+                Fragment fragment = new SecondFragment();
+                Bundle pacoteDeDados = new Bundle();
+                CountryCovidData dadosCovidPais = listaDadosCovidPais.get(posicao);
+                pacoteDeDados.putSerializable("dadosPais", dadosCovidPais);
+                fragment.setArguments(pacoteDeDados);
                 NavHostFragment.findNavController(FirstFragment.this)
-                        .navigate(R.id.action_FirstFragment_to_SecondFragment);
+                        .navigate(R.id.action_FirstFragment_to_SecondFragment, pacoteDeDados);
             }
         });
 
