@@ -21,8 +21,8 @@ public class ListaPaisesAdapter extends RecyclerView.Adapter<ListaPaisesAdapter.
     final private List<CountryCovidData> paises;
     final private Context context;
 
-    public ListaPaisesAdapter(List<CountryCovidData> paises, Context context) {
-        this.paises = paises;
+    public ListaPaisesAdapter(List<CountryCovidData> pais, Context context) {
+        this.paises = pais;
         this.context = context;
     }
 
@@ -36,34 +36,32 @@ public class ListaPaisesAdapter extends RecyclerView.Adapter<ListaPaisesAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull ListaPaisesAdapter.ViewHolder holder, int position) {
-
         CountryCovidData countryCovidData = paises.get(position);
+        holder.vincula(countryCovidData);
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return paises.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
-
+        private CountryCovidData pais;
         private final TextView item_pais_NomePais;
-        private final TextView fragment_second_UltimaAtualizacao;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             item_pais_NomePais = itemView.findViewById(R.id.item_pais_NomePais);
-            fragment_second_UltimaAtualizacao = itemView.findViewById(R.id.fragment_second_UltimaAtualizacao);
         }
 
         public void vincula (CountryCovidData pais){
+            this.pais = pais;
             preencheCampos(pais);
         }
 
         private void preencheCampos(CountryCovidData pais) {
             item_pais_NomePais.setText(pais.getCountryText());
-            fragment_second_UltimaAtualizacao.setText(pais.getLastUpdateText());
         }
 
     }
