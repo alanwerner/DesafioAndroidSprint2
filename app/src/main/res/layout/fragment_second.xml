@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SecondFragment">
+    tools:context=".SecondFragment"
+    android:background="@android:color/white">
 
     <TextView
         android:id="@+id/fragment_second_NomePais"
@@ -16,6 +17,7 @@
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@android:color/holo_red_light"
         tools:text="World" />
 
     <TextView
@@ -27,7 +29,8 @@
         android:layout_marginTop="10dp"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/fragment_second_NomePais"
-        app:layout_constraintTop_toBottomOf="@+id/fragment_second_NomePais" />
+        app:layout_constraintTop_toBottomOf="@+id/fragment_second_NomePais"
+        android:textColor="@android:color/holo_red_light"/>
 
     <TextView
         android:id="@+id/fragment_second_UltimaAtualizacaoDados"
@@ -38,7 +41,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/fragment_second_UltimaAtualizacaoTexto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/fragment_second_UltimaAtualizacaoTexto"
-        tools:text="2022-08-19 21:10" />
+        tools:text="2022-08-19 21:10"
+        android:textColor="@android:color/holo_red_light"/>
 
     <TextView
         android:id="@+id/fragment_second_CasosAtivosTexto"
@@ -49,7 +53,8 @@
         android:text="Casos ativos:"
         android:textSize="20dp"
         app:layout_constraintStart_toStartOf="@+id/fragment_second_UltimaAtualizacaoTexto"
-        app:layout_constraintTop_toBottomOf="@+id/fragment_second_UltimaAtualizacaoTexto" />
+        app:layout_constraintTop_toBottomOf="@+id/fragment_second_UltimaAtualizacaoTexto"
+        android:textColor="@android:color/holo_red_light"/>
 
     <TextView
         android:id="@+id/fragment_second_CasosAtivosDados"
@@ -60,7 +65,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/fragment_second_CasosAtivosTexto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/fragment_second_CasosAtivosTexto"
-        tools:text="+613,399" />
+        tools:text="+613,399"
+        android:textColor="@android:color/holo_red_light"/>
 
     <TextView
         android:id="@+id/fragment_second_NovosCasosTexto"
@@ -71,7 +77,8 @@
         android:text="Novos casos:"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/fragment_second_CasosAtivosTexto"
-        app:layout_constraintTop_toBottomOf="@+id/fragment_second_CasosAtivosTexto" />
+        app:layout_constraintTop_toBottomOf="@+id/fragment_second_CasosAtivosTexto"
+        android:textColor="@android:color/holo_red_light"/>
 
     <TextView
         android:id="@+id/fragment_second_NovosCasosDados"
@@ -82,7 +89,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/fragment_second_NovosCasosTexto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/fragment_second_NovosCasosTexto"
-        tools:text="+625,727" />
+        tools:text="+625,727"
+        android:textColor="@android:color/holo_red_light"/>
 
     <TextView
         android:id="@+id/fragment_second_NovasMortesTexto"
@@ -93,7 +101,8 @@
         android:text="Novas mortes:"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/fragment_second_NovosCasosTexto"
-        app:layout_constraintTop_toBottomOf="@+id/fragment_second_NovosCasosTexto" />
+        app:layout_constraintTop_toBottomOf="@+id/fragment_second_NovosCasosTexto"
+        android:textColor="@android:color/holo_red_light"/>
 
     <TextView
         android:id="@+id/fragment_second_NovasMortesDados"
@@ -104,7 +113,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/fragment_second_NovasMortesTexto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/fragment_second_NovasMortesTexto"
-        tools:text="+1,361" />
+        tools:text="+1,361"
+        android:textColor="@android:color/holo_red_light"/>
 
     <TextView
         android:id="@+id/fragment_second_TotalDeCasosTexto"
@@ -115,7 +125,8 @@
         android:text="Total de casos:"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/fragment_second_NovasMortesTexto"
-        app:layout_constraintTop_toBottomOf="@+id/fragment_second_NovasMortesTexto" />
+        app:layout_constraintTop_toBottomOf="@+id/fragment_second_NovasMortesTexto"
+        android:textColor="@android:color/holo_red_light"/>
 
     <TextView
         android:id="@+id/fragment_second_TotalDeCasosDados"
@@ -126,7 +137,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/fragment_second_TotalDeCasosTexto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/fragment_second_TotalDeCasosTexto"
-        tools:text="599,321,245" />
+        tools:text="599,321,245"
+        android:textColor="@android:color/holo_red_light"/>
 
     <TextView
         android:id="@+id/fragment_second_TotalDeMortesTexto"
@@ -137,7 +149,8 @@
         android:text="Total de mortes:"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/fragment_second_TotalDeCasosTexto"
-        app:layout_constraintTop_toBottomOf="@+id/fragment_second_TotalDeCasosTexto" />
+        app:layout_constraintTop_toBottomOf="@+id/fragment_second_TotalDeCasosTexto"
+        android:textColor="@android:color/holo_red_light"/>
 
     <TextView
         android:id="@+id/fragment_second_TotalDeMortesDados"
@@ -148,7 +161,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/fragment_second_TotalDeMortesTexto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/fragment_second_TotalDeMortesTexto"
-        tools:text="6,467,744" />
+        tools:text="6,467,744"
+        android:textColor="@android:color/holo_red_light"/>
 
     <TextView
         android:id="@+id/fragment_second_TotalDeRecuperadosTexto"
@@ -159,7 +173,8 @@
         android:text="Total de recuperados:"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/fragment_second_TotalDeMortesTexto"
-        app:layout_constraintTop_toBottomOf="@+id/fragment_second_TotalDeMortesTexto" />
+        app:layout_constraintTop_toBottomOf="@+id/fragment_second_TotalDeMortesTexto"
+        android:textColor="@android:color/holo_red_light"/>
 
     <TextView
         android:id="@+id/fragment_second_TotalDeRecuperadosDados"
@@ -170,7 +185,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/fragment_second_TotalDeRecuperadosTexto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/fragment_second_TotalDeRecuperadosTexto"
-        tools:text="573,358,577" />
-
+        tools:text="573,358,577"
+        android:textColor="@android:color/holo_red_light"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,7 +6,9 @@
     android:id="@+id/cardViewPaises"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="5dp">
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    android:backgroundTint="@android:color/holo_red_light">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -23,6 +25,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            android:textColor="@android:color/white"
             tools:text="Pais" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

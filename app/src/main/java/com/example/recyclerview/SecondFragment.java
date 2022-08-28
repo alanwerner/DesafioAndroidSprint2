@@ -39,9 +39,6 @@ public class SecondFragment extends Fragment {
         try {
             if (!dadosCovidPais.getLastUpdate().equals("")) {
                 binding.fragmentSecondUltimaAtualizacaoDados.setText(dadosCovidPais.getLastUpdate());
-            } else {
-                binding.fragmentSecondUltimaAtualizacaoDados.setVisibility(View.GONE);
-                binding.fragmentSecondUltimaAtualizacaoTexto.setVisibility(View.GONE);
             }
         } catch (Exception e){
             binding.fragmentSecondUltimaAtualizacaoDados.setVisibility(View.GONE);

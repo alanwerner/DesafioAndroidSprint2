@@ -5,15 +5,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.recyclerview.R;
 import com.example.recyclerview.adapter.listener.OnItemClickListener;
 import com.example.recyclerview.data.CountryCovidData;
-import com.example.recyclerview.data.GetCountryCovidDataListUseCase;
-import com.example.recyclerview.data.GetCovidDataListFromJson;
 
 import java.util.List;
 
@@ -52,14 +48,14 @@ public class ListaPaisesAdapter extends RecyclerView.Adapter<ListaPaisesAdapter.
         return paises.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder{
+    public class ViewHolder extends RecyclerView.ViewHolder {
         private CountryCovidData pais;
         private final TextView item_pais_NomePais;
-
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             item_pais_NomePais = itemView.findViewById(R.id.item_pais_NomePais);
+
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -68,7 +64,7 @@ public class ListaPaisesAdapter extends RecyclerView.Adapter<ListaPaisesAdapter.
             });
         }
 
-        public void vincula (CountryCovidData pais){
+        public void vincula(CountryCovidData pais) {
             this.pais = pais;
             preencheCampos(pais);
         }
