@@ -22,10 +22,8 @@ public class SecondFragment extends Fragment {
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
-
         binding = FragmentSecondBinding.inflate(inflater, container, false);
         return binding.getRoot();
-
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
@@ -38,49 +36,54 @@ public class SecondFragment extends Fragment {
         nomePaisDado.setText(dadosCovidPais.getCountryText());
 
 
-        if (!dadosCovidPais.getLastUpdate().equals("")){
-            binding.fragmentSecondUltimaAtualizacaoDados.setText(dadosCovidPais.getLastUpdate());
-        } else {
+        try {
+            if (!dadosCovidPais.getLastUpdate().equals("")) {
+                binding.fragmentSecondUltimaAtualizacaoDados.setText(dadosCovidPais.getLastUpdate());
+            } else {
+                binding.fragmentSecondUltimaAtualizacaoDados.setVisibility(View.GONE);
+                binding.fragmentSecondUltimaAtualizacaoTexto.setVisibility(View.GONE);
+            }
+        } catch (Exception e){
             binding.fragmentSecondUltimaAtualizacaoDados.setVisibility(View.GONE);
             binding.fragmentSecondUltimaAtualizacaoTexto.setVisibility(View.GONE);
         }
 
-        if (!dadosCovidPais.getActiveCasesText().equals("")){
+        if (!dadosCovidPais.getActiveCasesText().equals("")) {
             binding.fragmentSecondCasosAtivosDados.setText(dadosCovidPais.getActiveCasesText());
         } else {
             binding.fragmentSecondCasosAtivosDados.setVisibility(View.GONE);
             binding.fragmentSecondCasosAtivosTexto.setVisibility(View.GONE);
         }
 
-        if (!dadosCovidPais.getNewCasesText().equals("")){
+        if (!dadosCovidPais.getNewCasesText().equals("")) {
             binding.fragmentSecondNovosCasosDados.setText(dadosCovidPais.getNewCasesText());
         } else {
             binding.fragmentSecondNovosCasosDados.setVisibility(View.GONE);
             binding.fragmentSecondNovosCasosTexto.setVisibility(View.GONE);
         }
 
-        if (!dadosCovidPais.getNewDeathsText().equals("")){
+        if (!dadosCovidPais.getNewDeathsText().equals("")) {
             binding.fragmentSecondNovasMortesDados.setText(dadosCovidPais.getNewDeathsText());
         } else {
             binding.fragmentSecondNovasMortesDados.setVisibility(View.GONE);
             binding.fragmentSecondNovasMortesTexto.setVisibility(View.GONE);
         }
 
-        if (!dadosCovidPais.getTotalCasesText().equals("")){
+        if (!dadosCovidPais.getTotalCasesText().equals("")) {
             binding.fragmentSecondTotalDeCasosDados.setText(dadosCovidPais.getTotalCasesText());
         } else {
             binding.fragmentSecondTotalDeCasosDados.setVisibility(View.GONE);
             binding.fragmentSecondTotalDeCasosTexto.setVisibility(View.GONE);
         }
 
-        if (!dadosCovidPais.getTotalDeathsText().equals("")){
+        if (!dadosCovidPais.getTotalDeathsText().equals("")) {
             binding.fragmentSecondTotalDeMortesDados.setText(dadosCovidPais.getTotalDeathsText());
         } else {
             binding.fragmentSecondTotalDeMortesDados.setVisibility(View.GONE);
             binding.fragmentSecondTotalDeMortesTexto.setVisibility(View.GONE);
         }
 
-        if (!dadosCovidPais.getTotalRecoveredText().equals("")){
+        if (!dadosCovidPais.getTotalRecoveredText().equals("")) {
             binding.fragmentSecondTotalDeRecuperadosDados.setText(dadosCovidPais.getTotalRecoveredText());
         } else {
             binding.fragmentSecondTotalDeRecuperadosDados.setVisibility(View.GONE);
