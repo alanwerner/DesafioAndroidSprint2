@@ -35,3 +35,7 @@ O scrum product owner é o representante do cliente dentro de um time, que tem c
 4.O que é Git?
 
 Git é o sistema de controle de versões mais usado no mundo, desenvolvido por Linus Torvalds, utilizado para gerir as diferentes versões criadas em um projeto, facilitando assim o trabalho em equipe.
+
+5.Qual o comando para criação de um novo repositório no Git?
+
+O comando para criar um novo repositório no Git é: Git init
