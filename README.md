@@ -20,4 +20,6 @@ Requisitos :
 Bonus :
 - Usar databinding https://developer.android.com/topic/libraries/data-binding
 
+1.Para que serve o método Scrum?
 
+O método Scrum serve para diminuir o tempo de entrega e aumentar a qualidade dos projetos de uma empresa, além de poder se adaptar a possíveis mudanças.
