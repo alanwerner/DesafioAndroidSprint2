@@ -27,3 +27,7 @@ O método Scrum serve para diminuir o tempo de entrega e aumentar a qualidade do
 2.Como funciona o método Scrum?
 
 O método Scrum é baseado em etapas, onde cada etapa tem um objetivo, no entanto a etapa mais comum é a Sprint, que dura no máximo duas semanas e nela objetiva se finalizar uma pequena parte de um grande projeto o mais rápido e com a melhor qualidade possível.
+
+3.O que é um scrum Product Owner?
+
+O scrum product owner é o representante do cliente dentro de um time, que tem como objetivo fazer a ponte de comunicação entre esses. O P.O. trabalha diariamente com o time e deve tentar compreender ao máximo o cliente, para deixar o Product Backlog o mais refinado possível para que o time entregue o maior valor possível ao produto em cada sprint.
