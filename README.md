@@ -53,3 +53,7 @@ Branch significa ramo, portanto uma Branch master seria um tronco, ou seja, a pa
 O comando utilizado para atualizar um repositório local é: Git checkout
 
 O comando utilizado para fazer merge de outra branch na branch atual é: Git merge
+
+9.Qual a diferença entre git e github?
+
+A diferença entre Git e Github é que enquanto o Git é um software que roda no seu computador e permite o gerenciamento das versões do seu projeto, já o Github é uma plataforma que permite fazer o upload das versões do seu projeto na nuvem, permitindo assim que desenvolvedores possam trabalhar de forma mais organizada.
