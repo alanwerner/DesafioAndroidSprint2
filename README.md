@@ -39,3 +39,7 @@ Git é o sistema de controle de versões mais usado no mundo, desenvolvido por L
 5.Qual o comando para criação de um novo repositório no Git?
 
 O comando para criar um novo repositório no Git é: Git init
+
+6.Com o Git Você pode propor mudanças (adicioná-las ao Index) usando umcomando. Qual é esse comando?
+
+O comando para adicionar mudanças ao index é: Git add
