@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RecyclerView</string>
+    <string name="app_name">Dados Covid</string>
     <string name="first_fragment_label">Lista de Países</string>
     <string name="second_fragment_label">País</string>>
 </resources>

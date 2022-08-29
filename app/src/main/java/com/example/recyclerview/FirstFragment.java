@@ -1,16 +1,13 @@
 package com.example.recyclerview;
 
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.recyclerview.adapter.ListaPaisesAdapter;
 import com.example.recyclerview.adapter.listener.OnItemClickListener;
 import com.example.recyclerview.data.CountryCovidData;
@@ -35,9 +32,16 @@ public class FirstFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
         List<CountryCovidData> listaDadosCovidPais = new GetCovidDataListFromJson().execute(getContext());
+        configuraRecyclerView(listaDadosCovidPais);
+    }
+
+    private void configuraRecyclerView(List<CountryCovidData> listaDadosCovidPais) {
         RecyclerView listaPaises = binding.listaPaisesRecyclerView;
+        configuraAdapter(listaDadosCovidPais, listaPaises);
+    }
+
+    private void configuraAdapter(List<CountryCovidData> listaDadosCovidPais, RecyclerView listaPaises) {
         adapter = new ListaPaisesAdapter(listaDadosCovidPais, getContext());
         listaPaises.setAdapter(adapter);
         adapter.setOnItemClickListener(new OnItemClickListener() {
@@ -52,8 +56,6 @@ public class FirstFragment extends Fragment {
                         .navigate(R.id.action_FirstFragment_to_SecondFragment, pacoteDeDados);
             }
         });
-
-
     }
 
 

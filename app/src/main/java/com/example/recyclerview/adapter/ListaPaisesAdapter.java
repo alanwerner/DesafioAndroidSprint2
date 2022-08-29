@@ -10,7 +10,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.recyclerview.R;
 import com.example.recyclerview.adapter.listener.OnItemClickListener;
 import com.example.recyclerview.data.CountryCovidData;
-
 import java.util.List;
 
 public class ListaPaisesAdapter extends RecyclerView.Adapter<ListaPaisesAdapter.ViewHolder> {
