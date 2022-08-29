@@ -47,3 +47,9 @@ O comando para adicionar mudanças ao index é: Git add
 7.O que é a Branch master e para que serve?
 
 Branch significa ramo, portanto uma Branch master seria um tronco, ou seja, a parte principal de um projeto no repositório do Git. É importante em projetos em equipe que cada desenvolvedor crie e desenvolva seu projeto em sua própria branch e mantenha a master íntegra. 
+
+8.Quais são os comandos usados para atualizar um repositório local e fazer mergede um outro branch ao seu branch ativo?
+
+O comando utilizado para atualizar um repositório local é: Git checkout
+
+O comando utilizado para fazer merge de outra branch na branch atual é: Git merge
