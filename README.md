@@ -23,3 +23,7 @@ Bonus :
 1.Para que serve o método Scrum?
 
 O método Scrum serve para diminuir o tempo de entrega e aumentar a qualidade dos projetos de uma empresa, além de poder se adaptar a possíveis mudanças.
+
+2.Como funciona o método Scrum?
+
+O método Scrum é baseado em etapas, onde cada etapa tem um objetivo, no entanto a etapa mais comum é a Sprint, que dura no máximo duas semanas e nela objetiva se finalizar uma pequena parte de um grande projeto o mais rápido e com a melhor qualidade possível.
