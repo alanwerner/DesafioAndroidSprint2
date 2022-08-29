@@ -57,3 +57,7 @@ O comando utilizado para fazer merge de outra branch na branch atual é: Git mer
 9.Qual a diferença entre git e github?
 
 A diferença entre Git e Github é que enquanto o Git é um software que roda no seu computador e permite o gerenciamento das versões do seu projeto, já o Github é uma plataforma que permite fazer o upload das versões do seu projeto na nuvem, permitindo assim que desenvolvedores possam trabalhar de forma mais organizada.
+
+10.Conta pra gente como foi sua experiência na Sprint#02 do programa de bolsa@Android e quais suas expectativas a partir de agora:
+
+Minha experiência na Sprint#02 do programa de bolsa @Android tem sido muito boa, pois venho fazendo uma das coisas que mais gosto, aprender. Achei o desafio bem desafiador, uma das coisas mais complexas que já realizei, pois ele me mostrou as dificuldades de desenvolver um aplicativo praticamente do zero por conta própria. Minhas expectativas estão bem altas, pois espero seguir aprendendo cada vez mais e minha ansiedade está lá em cima para saber qual será o próximo desafio.
