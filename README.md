@@ -31,3 +31,7 @@ O método Scrum é baseado em etapas, onde cada etapa tem um objetivo, no entant
 3.O que é um scrum Product Owner?
 
 O scrum product owner é o representante do cliente dentro de um time, que tem como objetivo fazer a ponte de comunicação entre esses. O P.O. trabalha diariamente com o time e deve tentar compreender ao máximo o cliente, para deixar o Product Backlog o mais refinado possível para que o time entregue o maior valor possível ao produto em cada sprint.
+
+4.O que é Git?
+
+Git é o sistema de controle de versões mais usado no mundo, desenvolvido por Linus Torvalds, utilizado para gerir as diferentes versões criadas em um projeto, facilitando assim o trabalho em equipe.
